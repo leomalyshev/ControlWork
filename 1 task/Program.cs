@@ -11,29 +11,3 @@ for(int i=0; i < n; i++)
 {
     stringArray[i] = Console.ReadLine();
 }
-
-PrintArray(stringArray);
-string[] newArray = ReduceArray(stringArray);
-PrintArray(newArray);
-
-
-
-
-void PrintArray(string[] array)
-{
-    foreach (string item in array)
-    {
-        Console.Write($"{item} ");
-    }
-    Console.WriteLine();
-}
-
-string[] ReduceArray(string[] array)
-{
-    string[] newArray = new string[3];
-    for(int i=0; i < 3; i++)
-    {
-        newArray[i] = array[i];
-    }
-    return newArray;
-}
