@@ -12,6 +12,11 @@ for(int i=0; i < n; i++)
     stringArray[i] = Console.ReadLine();
 }
 
+PrintArray(stringArray);
+string[] newArray = ReduceArray(stringArray);
+PrintArray(newArray);
+
+
 
 
 void PrintArray(string[] array)
